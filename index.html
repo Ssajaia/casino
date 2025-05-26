@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ნაღდი სლოტები</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="slot-machine">
+      <h1>სლოტები</h1>
+      <div class="balance">ბალანსი: $<span id="balance">100</span></div>
+
+      <div class="slots-container">
+        <div class="slot" id="slot1"></div>
+        <div class="slot" id="slot2"></div>
+        <div class="slot" id="slot3"></div>
+      </div>
+
+      <div class="controls">
+        <button id="spin-btn">დაატრუალე ($10)</button>
+        <div class="result" id="result"></div>
+      </div>
+
+      <div class="paytable">
+        <h3>Payouts:</h3>
+        <ul>
+          <li>3x შვიდები: $100</li>
+          <li>3x საზამთრო: $50</li>
+          <li>3x ყურძენი: $30</li>
+          <li>3x ფორთოხალი: $20</li>
+          <li>3x ძუძუები: $15</li>
+          <li>3x ლიმონი: $10</li>
+          <li>ნებისმიერი ორი: $5</li>
+          <button type="submit" id="unlimited">money</button>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="/javascript/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.slot-machine {
+  background-color: #16213e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #f9c74f;
+  margin-top: 0;
+}
+
+.balance {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #4cc9f0;
+}
+
+.slots-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: #0f3460;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.slot {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #f94144;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f3722c;
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 1.2em;
+  min-height: 24px;
+}
+
+.paytable {
+  background-color: #0f3460;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.paytable h3 {
+  margin-top: 0;
+  color: #f9c74f;
+}
+
+.paytable ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.win {
+  color: #90be6d;
+  animation: pulse 0.5s;
+}
+
+.lose {
+  color: #f94144;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#unlimited {
+  color: transparent;
+  background-color: transparent;
+  cursor: default;
+}
